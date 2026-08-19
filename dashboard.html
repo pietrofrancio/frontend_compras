@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard — Sistema de Compras</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="usuarios.html">Usuários</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="compras.html">Movimentação</a></li>
+            <li><a href="relatorio-analitico.html">Relatório Analítico</a></li>
+            <li><a href="relatorio-grafico.html">Relatório Gráfico</a></li>
+            <li><a href="dashboard.html" class="ativo">Dashboard</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Dashboard de Produtos</h1>
+        <p class="subtitulo">Painel centralizador com todos os produtos em formato de card.</p>
+
+        <div class="campo" style="max-width:300px;">
+            <label for="busca">Buscar por nome</label>
+            <input type="text" id="busca" placeholder="Digite para filtrar...">
+        </div>
+
+        <div class="grade-produtos" id="grade-produtos"></div>
+    </main>
+
+    <footer>
+        <p>Sistema de Compras Interno — Trabalho Prático de Programação de Aplicativos</p>
+        <p>Contato: Pietro Francio de Miranda — E-mail: pietrof.miranda@gmail.com — Tel: 47 99698-8849</p>
+    </footer>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

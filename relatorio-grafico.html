@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório Gráfico — Sistema de Compras</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="usuarios.html">Usuários</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="compras.html">Movimentação</a></li>
+            <li><a href="relatorio-analitico.html">Relatório Analítico</a></li>
+            <li><a href="relatorio-grafico.html" class="ativo">Relatório Gráfico</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Relatório Gráfico</h1>
+        <p class="subtitulo">Gráficos dinâmicos gerados com Chart.js a partir das rotas do back-end.</p>
+
+        <div class="caixa-grafico">
+            <h2>Estoque físico atual</h2>
+            <canvas id="grafico-estoque"></canvas>
+        </div>
+
+        <div class="caixa-grafico">
+            <h2>Volume financeiro de compras (top 5 produtos)</h2>
+            <canvas id="grafico-volume"></canvas>
+        </div>
+    </main>
+
+    <footer>
+        <p>Sistema de Compras Interno — Trabalho Prático de Programação de Aplicativos</p>
+        <p>Contato: Pietro Francio de Miranda — E-mail: pietrof.miranda@gmail.com — Tel: 47 99698-8849</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/relatorio-grafico.js"></script>
+</body>
+</html>

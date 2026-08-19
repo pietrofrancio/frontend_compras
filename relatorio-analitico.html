@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório Analítico — Sistema de Compras</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="usuarios.html">Usuários</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="compras.html">Movimentação</a></li>
+            <li><a href="relatorio-analitico.html" class="ativo">Relatório Analítico</a></li>
+            <li><a href="relatorio-grafico.html">Relatório Gráfico</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Relatório Analítico</h1>
+        <p class="subtitulo">Dados extraídos diretamente das Views do banco de dados.</p>
+
+        <h2>Produtos críticos (estoque abaixo de 10 unidades)</h2>
+        <p class="subtitulo">View: vw_produtos_criticos</p>
+        <div class="tabela-scroll">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Nome</th>
+                        <th>Categoria</th>
+                        <th>Quantidade atual</th>
+                    </tr>
+                </thead>
+                <tbody id="corpo-criticos"></tbody>
+            </table>
+        </div>
+
+        <h2>Volume financeiro comprado por produto</h2>
+        <p class="subtitulo">View: vw_volume_compras</p>
+        <div class="tabela-scroll">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Produto</th>
+                        <th>Quantidade total movimentada</th>
+                        <th>Valor financeiro movimentado</th>
+                    </tr>
+                </thead>
+                <tbody id="corpo-volume"></tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>Sistema de Compras Interno — Trabalho Prático de Programação de Aplicativos</p>
+        <p>Contato: Pietro Francio de Miranda — E-mail: pietrof.miranda@gmail.com — Tel: 47 99698-8849</p>
+    </footer>
+
+    <script src="js/relatorio-analitico.js"></script>
+</body>
+</html>
